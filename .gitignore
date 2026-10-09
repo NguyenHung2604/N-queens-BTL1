@@ -1,0 +1,42 @@
+# Môi trường Python
+.venv/
+venv/
+env/
+
+# File Python tự sinh
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Cấu hình riêng của IDE
+.vscode/
+.idea/
+
+# Biến môi trường và license solver
+.env
+.env.*
+!.env.example
+*.lic
+
+# File tạm của hệ điều hành
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+
+# File trung gian khi biên dịch LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out
+
+# Log chạy chương trình hoặc biên dịch
+*.log
