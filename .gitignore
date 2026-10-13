@@ -2,6 +2,7 @@
 .venv/
 venv/
 env/
+venv-win/
 
 # File Python tự sinh
 __pycache__/
