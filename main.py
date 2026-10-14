@@ -6,6 +6,8 @@ from pysat.solvers import Glucose3
 
 from pairwise import encode_amo as pairwise_amo
 from sequential import encode_amo as sequential_amo
+from binary import encode_amo as binary_amo
+from product import encode_amo as product_amo
 from utils import check_solution
 
 def solve_nqueens(n, encoding, show_board = True):
@@ -17,8 +19,12 @@ def solve_nqueens(n, encoding, show_board = True):
         encode_amo = pairwise_amo
     elif encoding == "sequential":
         encode_amo = sequential_amo
+    elif encoding == "binary":
+        encode_amo = binary_amo
+    elif encoding == "product":
+        encode_amo = product_amo
     else:
-        raise ValueError("Encoding phải là pairwise hoặc sequential.")
+        raise ValueError("Encoding phải là pairwise, sequential, binary hoặc product.")
 
     def var(r, c):
         return r * n + c + 1

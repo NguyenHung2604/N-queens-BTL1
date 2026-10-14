@@ -62,5 +62,5 @@ def solve_cp_sat(n, show_board=True, time_limit=60):
 
 
 if __name__ == "__main__":
-    for n in [1,2,3,4,5]:
+    for n in [1,2,3,8,44,88,120,300,512]:
         print(solve_cp_sat(n,show_board=False))

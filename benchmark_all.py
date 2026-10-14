@@ -61,4 +61,4 @@ def run_benchmark(sizes, repeats=3, time_limit=30):
 
 
 if __name__ == "__main__":
-    run_benchmark(sizes=[8, 15, 30, 44], repeats=3, time_limit=30)
+    run_benchmark(sizes=[8, 15, 30, 44, 88, 120, 512], repeats=3, time_limit=30)

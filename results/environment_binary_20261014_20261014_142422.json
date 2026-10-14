@@ -1,0 +1,38 @@
+{
+  "settings": {
+    "sizes": [
+      1,
+      2,
+      3,
+      8,
+      15,
+      30,
+      44,
+      88,
+      120,
+      300,
+      512
+    ],
+    "methods": [
+      "sat_binary"
+    ],
+    "repeats": 3,
+    "time_limit": 60.0,
+    "max_failed_sizes": 2,
+    "started": "2026-10-14T14:24:22"
+  },
+  "environment": {
+    "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "cpu_count_logical": 12,
+    "ram_gb": 15.4,
+    "packages": {
+      "python-sat": "1.9.dev15",
+      "ortools": "9.15.6755",
+      "gurobipy": "13.0.3",
+      "cplex": "22.2.0.0",
+      "docplex": "2.32.264"
+    }
+  }
+}

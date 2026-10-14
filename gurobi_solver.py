@@ -79,11 +79,12 @@ def solve_gurobi(n, show_board=True, time_limit=60):
 
         # --- Kiểm tra nghiệm độc lập (không tính vào thời gian) ---
         if status == "SAT":
+            values = model.getAttr("X", x)  # lấy toàn bộ giá trị một lần
             queen_cells = {
                 r * n + c + 1
                 for r in range(n)
                 for c in range(n)
-                if x[r, c].X > 0.5
+                if values[r, c] > 0.5
             }
             valid = check_solution(queen_cells, n)
 
@@ -115,5 +116,5 @@ def solve_gurobi(n, show_board=True, time_limit=60):
 
 
 if __name__ == "__main__":
-    for n in [30,44,45]:
+    for n in [1,2,3,8,44,88,120,300,512]:
         print(solve_gurobi(n, show_board=False))
